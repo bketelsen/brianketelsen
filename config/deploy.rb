@@ -12,7 +12,11 @@ set :deploy_to, "/var/www/apps/#{application}"
 
 # If you aren't using Subversion to manage your source code, specify
 # your SCM below:
-set :scm, :subversion
+set :scm, :git
+set :repository, "git@github.com:bketelsen/brianketelsen.git"
+
+set :deploy_via,  :copy
+
 
 
 
