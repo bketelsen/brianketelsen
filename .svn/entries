@@ -1,0 +1,97 @@
+8
+
+dir
+18
+http://bketelsen.unfuddle.com/svn/bketelsen_bkhomepage/trunk
+http://bketelsen.unfuddle.com/svn/bketelsen_bkhomepage
+
+
+
+2008-05-11T02:13:06.745988Z
+18
+bketelsen_bketelsen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8129c43a-6588-4f6f-97d2-12f3c5dbd359
+
+test
+dir
+
+app
+dir
+
+tmp
+dir
+
+log
+dir
+
+Rakefile
+file
+
+
+
+
+2008-05-11T02:13:59.000000Z
+17f2f134da4cd31ea095d5868ca89e86
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+
+Capfile
+file
+
+
+
+
+2008-05-11T02:13:59.000000Z
+80af59698a27743cd814398027fb7bb7
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+
+script
+dir
+
+config
+dir
+
+db
+dir
+
+doc
+dir
+
+lib
+dir
+
+vendor
+dir
+
+README
+file
+
+
+
+
+2008-05-11T02:13:59.000000Z
+d6c1fbcf028923cc0480fff4ab459a21
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+
+public
+dir
+

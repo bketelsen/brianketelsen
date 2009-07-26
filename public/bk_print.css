@@ -1,0 +1,38 @@
+/* bk.css   */
+
+body {
+	background-color: #f1f1f1;
+	text-align: center;
+	font: 20pt courier;
+	color: #9c9c9c;
+}
+#brian {
+	text-align: center;
+	width: 290px;
+	height: 17px;
+	margin: auto;
+}
+#upper, #lower {
+	text-align: left;
+	width: 290px;
+	height: 0px;
+	margin: auto;
+	display:none;
+}
+
+.letter {
+	float: left;
+	height: 20px;
+}
+
+.desc {
+	font-size: 12pt;
+	text-align: left;
+	clear: left;
+	display: block;
+	margin-top: 20px;
+}
+.desc b {
+	color: #7f2643;
+
+

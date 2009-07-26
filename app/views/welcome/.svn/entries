@@ -1,0 +1,40 @@
+8
+
+dir
+18
+http://bketelsen.unfuddle.com/svn/bketelsen_bkhomepage/trunk/app/views/welcome
+http://bketelsen.unfuddle.com/svn/bketelsen_bkhomepage
+
+
+
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8129c43a-6588-4f6f-97d2-12f3c5dbd359
+
+index.html.erb
+file
+
+
+
+
+2008-05-11T02:13:59.000000Z
+f0304a587b6c0db3be0bfef78ab8cd25
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+

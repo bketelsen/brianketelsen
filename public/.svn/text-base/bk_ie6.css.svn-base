@@ -1,0 +1,26 @@
+#top, #bottom, #left, #right { display: none; }
+/*  indents needed to line the vertical texts with the letter in brian  */
+#uruby, #lruby {
+	margin-left: 8px;
+}
+#uproto, #lproto {
+	margin-left: 16px;
+}
+#uflorida, #lflorida {
+	margin-left: 24px;
+}
+#uspike, #lspike {
+	margin-left: 48px;
+}
+#udeploy, #ldeploy {
+	margin-left: 56px;
+}
+#ustartup, #lstartup {
+	margin-left: 64px;
+}
+#uteam, #lteam {
+	margin-left: 120px;
+}
+#ucontact, #lcontact {
+	margin-left: 136px;
+}

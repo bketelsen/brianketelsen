@@ -1,0 +1,55 @@
+8
+
+dir
+18
+http://bketelsen.unfuddle.com/svn/bketelsen_bkhomepage/trunk/config/nginx/usr/local/nginx/conf
+http://bketelsen.unfuddle.com/svn/bketelsen_bkhomepage
+
+
+
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8129c43a-6588-4f6f-97d2-12f3c5dbd359
+
+vhosts
+dir
+
+nginx.conf
+file
+
+
+
+
+2008-05-11T02:13:59.000000Z
+fe29a09d3b7aee6b2884f54118b8f7c8
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+
+mime.types
+file
+
+
+
+
+2008-05-11T02:13:59.000000Z
+6e22a52df960f5f93561b92f05a1dd50
+2008-03-02T21:50:13.835590Z
+4
+bketelsen_bketelsen
+

@@ -1,0 +1,10 @@
+--- 
+user: mongrel_brianketelsen
+group: app_brianketelsen
+cwd: /var/www/apps/brianketelsen/current
+log_file: /var/www/apps/brianketelsen/shared/log/mongrel.log
+port: "8000"
+environment: production
+address: 127.0.0.1
+pid_file: /var/www/apps/brianketelsen/shared/pids/mongrel.pid
+servers: 2
