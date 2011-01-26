@@ -24,7 +24,7 @@ set :deploy_via,  :copy
 # servers (which is the deprec default), you can specify the actual location
 # via the :deploy_to variable:
 set :deploy_to, "/var/www/apps/#{application}"
-ssh_options[:keys] = ["/Users/briank/.ssh/id_rsa"]
+ssh_options[:keys] = ["/Users/bketelsen/.ssh/id_rsa"]
 
 
 

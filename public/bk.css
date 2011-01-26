@@ -96,6 +96,9 @@ body {
 #ustartup, #lstartup {
 	margin-left: 128px;
 }
+#ugolang, #lgolang {
+	margin-left: 160px;
+}
 #uteam, #lteam {
 	margin-left: 240px;
 }
