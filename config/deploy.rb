@@ -15,6 +15,8 @@ set :use_sudo, false
 set :scm, :git
 
 set :repository,  "git@github.com:bketelsen/brianketelsen.git"
+set :executable, "bkweb"
+
 
 # =============================================================================
 # ROLES
@@ -23,24 +25,30 @@ role :web, domain
 role :app, domain
 role :db,  domain, :primary => true
 
-# =============================================================================
-# OPTIONS
-# =============================================================================
-default_run_options[:pty] = true
-set :ssh_options, {
-  :paranoid => false
+set :default_environment, { 
+  'PATH' => "/home/briank/go/bin:/opt/ruby-enterprise-1.8.6-20090610/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:$PATH",
+  'GOARCH'=>"amd64",
+  'GOROOT'=>"/home/briank/go",
+  'GOOS'=>"linux"
+
 }
 
-
-
 namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
-  task :restart do ; end
+  task :start do 
+    run "cd #{deploy_to} && nohup #{deploy_to}/run.sh"
+  end
+  task :stop do 
+    run "killall #{executable}"
+  end
+  task :restart do 
+    stop
+    start
+  end
 
   desc "Deploy the app"
   task :default do
     update
+    restart
   end
 
   desc "Setup and clone the repo."
