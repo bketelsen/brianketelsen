@@ -53,12 +53,7 @@ namespace :deploy do
 
   desc "Setup and clone the repo."
   task :setup do
-    # setup
-    sudo "mkdir -p #{vhost}/repository/"
-    # permissions
-    sudo "chown -R #{owner}:#{group} #{repo_dir}"
-    sudo "chmod -R g+w #{repo_dir}"
-    # clone
+     # clone
     run "git clone #{repository} #{deploy_to}"
   end
 
