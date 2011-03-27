@@ -1,1 +1,1 @@
-export GOMAXPROCS=2 ./bkweb > output.log &
+export GOMAXPROCS=2 && ./bkweb > output.log &
