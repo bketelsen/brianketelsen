@@ -35,6 +35,8 @@ set :default_environment, {
 
 namespace :deploy do
   task :start do 
+    stop
+    run "make"
     run "/usr/sbin/monit start #{executable}"
   end
   task :stop do 
