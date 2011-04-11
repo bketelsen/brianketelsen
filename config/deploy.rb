@@ -35,10 +35,10 @@ set :default_environment, {
 
 namespace :deploy do
   task :start do 
-    run "cd #{deploy_to} && nohup #{deploy_to}/run.sh"
+    run "/usr/sbin/monit start #{executable}"
   end
   task :stop do 
-    run "killall #{executable}"
+    run "/usr/sbin/monit stop #{executable}"
   end
   task :restart do 
     stop
