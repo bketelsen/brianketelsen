@@ -28,7 +28,7 @@ role :db,  domain, :primary => true
 
 set :default_environment, { 
   'PATH' => "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH",
-  'GOARCH'=>"x86",
+  'GOARCH'=>"386",
   'GOROOT'=>"/usr/lib/go",
   'GOPATH' => "/home/bketelsen/go",
   'GOOS'=>"linux"
