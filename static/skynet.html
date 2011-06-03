@@ -1,0 +1,95 @@
+
+<!doctype html> 
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]--> 
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]--> 
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]--> 
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]--> 
+<head> 
+ 
+	<!-- Basic Page Needs
+  ================================================== --> 
+	<meta charset="utf-8" /> 
+	<title>Skynet: Simple, Scalable Services in Go</title> 
+	<meta name="description" content=""> 
+	<meta name="author" content=""> 
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+	
+	<!-- Mobile Specific Metas
+  ================================================== --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+	<!-- CSS
+  ================================================== --> 
+	<link rel="stylesheet" href="base.css"> 
+	<link rel="stylesheet" href="skeleton.css"> 
+	<link rel="stylesheet" href="layout.css"> 
+		<link rel="stylesheet" href="doc.css"> 
+	<!-- Favicon
+	================================================== --> 
+	<link rel="shortcut icon" href="favicon.ico"> 
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon.png"> 
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" /> 
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" /> 
+ 
+</head> 
+<body> 
+		
+			<div class="container">	
+				<div class="three columns sidebar"> 
+					<nav> 
+						<h3 id="logo">Skynet</h3> 
+						<ul> 
+							<li><a href="#skynet">Skynet</a></li> 
+							<li><a href="#how">How does it work?</a></li> 
+							<li><a href="#where">Where can we buy it?</a></li> 
+						</ul> 
+					</nav> 
+					&nbsp;
+				</div> 
+				<div class="twelve columns content offset-by-one"> 
+					<header> 
+						<h1>Skynet is a system for building massively distributed apps in Go.</h1> 
+						<a href="http://twitter.com/share" class="twitter-share-button" data-text="Skynet - a system for building massively distributed apps in Go." data-count="horizontal" data-via="dhg">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+					</header> 
+					<hr class="large" /> 
+					<div class="doc-section" id="skynet"> 
+						<h3>What Is It?</h3> 
+						<p>Servers die, stop communicating, catch on fire, get killed by robots from the future, and should not be trusted. If your site won’t work with a Chaos Monkey, it isn’t safe. Enter Skynet. Each Skynet module is self–contained, self–aware, and self–replicating – if you have one server with an authentication module on it, and that server melts, Skynet will notice, kill it, and automatically create a new one.</p> 
+					</div> 
+					<hr /> 
+					<div class="doc-section clearfix" id="how"> 
+						<h3>How do you do it, Skynet?</h3> 
+						<p>Each process in SkyNet receives its configuration from a centralized configuration repository (currently Doozer - possibly pluggable in the future).  Configuration changes are pushed to each process when new skynet services are started.  This means that starting a new service automatically
+						advertises that service's availability to the rest of the members of the skynet cluster.</p>
+
+						<p>A typical transaction will come to an Initiator (via http for example) and be sent to a router that is providing the appropriate service to route that type of requests.  The Router checks its routes and calls the services listed in its route configuration for that Route type.  Routes also define whether a service can be called Asynchronously (fire and forget) or whether the router must wait for a response.  For each service listed in the route the Router calls the service passing in the request and response objects.  When all services are run, the router returns a response to the Initiator who is responsible for presenting the data to the remote client appropriately.  In our HTTP example, this could mean translating to data using an HTML template, or an XML/JSON template.</p>
+
+						<p>SkyNet uses Doozer to store configuration data about the available services and routes.  Configuration changes are pushed to Doozer, causing connected clients to immediately become aware of changed configurations.</p>
+
+					</div> 
+					<div class="doc-section clearfix" id="where"> 
+						<h3>Where can I get me some of that?</h3> 
+						<p>Skynet is released under an MIT style license.  It is available on <a href="https://github.com/bketelsen/skynet">Github</a>.</p>
+
+					</div> 
+
+				</div><!-- content --> 
+			</div><!-- container --> 
+			
+			<div class="resize"></div> 
+ 
+ 
+ 
+ 
+ 
+		
+		<!-- JS
+		================================================== --> 
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script> 
+		<script>window.jQuery || document.write("<script src='src/javascripts/jquery-1.5.1.min.js'>\x3C/script>")</script> 
+		<script src="src/javascripts/app.js"></script> 
+				
+	</body> 
+</html>
